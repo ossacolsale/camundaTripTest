@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  tripbooking:
+    image: volo
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3003:3003

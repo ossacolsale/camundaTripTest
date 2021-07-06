@@ -1,0 +1,5 @@
+/**
+ * Per Andrea: 
+ * 1) come posso gestire in BPM gli stessi processi in modo asincrono (specie in caso di errore)?
+ * 2) come gestisco i fallimenti o l'interruzione dei singoli processi?
+ */

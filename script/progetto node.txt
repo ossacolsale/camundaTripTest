@@ -1,0 +1,3 @@
+npm init
+npm install -s camunda-external-task-client-js
+npm i --save-dev @types/camunda-external-task-client-js

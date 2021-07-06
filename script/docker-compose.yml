@@ -1,0 +1,78 @@
+version: '3.4'
+networks: 
+  mynet: 
+services:
+  camunda:
+    hostname: camunda
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          cpus: "0.2"
+          memory: 500M
+      restart_policy:
+        condition: on-failure
+    networks:
+      - mynet
+    image: camunda/camunda-bpm-platform
+    environment:
+      NODE_ENV: production
+    ports:
+      - 8080:8080
+      
+
+
+  albergo:
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          cpus: "0.2"
+          memory: 50M
+      restart_policy:
+        condition:
+          on-failure
+    networks:
+      - mynet
+    image: albergo
+    #environment:
+    #  NODE_ENV: production
+    ports:
+      - 3000:3000
+  
+  volo:
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          cpus: "0.2"
+          memory: 50M
+      restart_policy:
+        condition:
+          on-failure
+    networks:
+      - mynet
+    image: volo
+    #environment:
+    #  NODE_ENV: production
+    ports:
+      - 3001:3001
+
+  automobile:
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          cpus: "0.2"
+          memory: 50M
+      restart_policy:
+        condition:
+          on-failure
+    networks:
+      - mynet
+    image: automobile
+    #environment:
+    #  NODE_ENV: production
+    ports:
+      - 3002:3002
+      - 8088:8088
