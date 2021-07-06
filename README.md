@@ -58,4 +58,4 @@ Notice the first two variables can be, arbitrarily, assigned true or false.
 Each of the three folders Car, Hotel and Flight, are ready to be containerized with docker image (node.js) and executed locally. Camuna image, instead,
 has to be properly downloaded from the official Docker repository.
 
-One way to run the images is throw the commands stored into "scripts" folder (be careful and take a look inside: for the moment this files are not well organized).
+One way to run the images is throw the commands stored into "scripts" folder (be careful and take a look inside: for the moment these files are not well organized).
