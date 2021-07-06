@@ -22,7 +22,7 @@ services:
       
 
 
-  albergo:
+  hotel:
     deploy:
       replicas: 3
       resources:
@@ -34,13 +34,13 @@ services:
           on-failure
     networks:
       - mynet
-    image: albergo
+    image: hotel
     #environment:
     #  NODE_ENV: production
     ports:
       - 3000:3000
   
-  volo:
+  flight:
     deploy:
       replicas: 3
       resources:
@@ -52,13 +52,13 @@ services:
           on-failure
     networks:
       - mynet
-    image: volo
+    image: flight
     #environment:
     #  NODE_ENV: production
     ports:
       - 3001:3001
 
-  automobile:
+  car:
     deploy:
       replicas: 3
       resources:
@@ -70,9 +70,8 @@ services:
           on-failure
     networks:
       - mynet
-    image: automobile
+    image: car
     #environment:
     #  NODE_ENV: production
     ports:
       - 3002:3002
-      - 8088:8088
