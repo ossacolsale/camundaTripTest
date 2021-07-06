@@ -1,5 +1,5 @@
 # Camunda Trip in Node.js / Docker with variables
-Source code of the same sample Camunda process as https://github.com/berndruecker/flowing-trip-booking-saga-c-sharp but with the following differences and additional features:
+This is the source code of the same sample Camunda process as https://github.com/berndruecker/flowing-trip-booking-saga-c-sharp but with the following differences and additional features:
 
 - **external tasks written in node.js** (using https://github.com/camunda/camunda-external-task-client-js library)
 - added a **parallelized version of bpmn** (through parallel gateway)
