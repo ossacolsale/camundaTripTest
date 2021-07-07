@@ -1,11 +1,11 @@
 version: '3.4'
-networks: 
-  mynet: 
+networks:
+  mynet:
 services:
   camunda:
     hostname: camunda
     deploy:
-      replicas: 2
+      replicas: 1
       resources:
         limits:
           cpus: "0.2"
@@ -19,12 +19,11 @@ services:
       NODE_ENV: production
     ports:
       - 8080:8080
-      
 
 
   hotel:
     deploy:
-      replicas: 3
+      replicas: 1
       resources:
         limits:
           cpus: "0.2"
@@ -42,7 +41,7 @@ services:
   
   flight:
     deploy:
-      replicas: 3
+      replicas: 1
       resources:
         limits:
           cpus: "0.2"
@@ -60,7 +59,7 @@ services:
 
   car:
     deploy:
-      replicas: 3
+      replicas: 1
       resources:
         limits:
           cpus: "0.2"
