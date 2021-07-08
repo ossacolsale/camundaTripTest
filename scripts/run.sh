@@ -3,9 +3,9 @@
 ###########################
 #image build:
 ###########################
-#docker build --pull --rm -f "../flight/Dockerfile" -t flight:latest "flight"
-#docker build --pull --rm -f "../car/Dockerfile" -t car:latest "car"
-#docker build --pull --rm -f "../hotel/Dockerfile" -t hotel:latest "hotel"
+#docker build --pull --rm -f "../flight/Dockerfile" -t flight:latest "../flight" &
+#docker build --pull --rm -f "../car/Dockerfile" -t car:latest "../car" &
+#docker build --pull --rm -f "../hotel/Dockerfile" -t hotel:latest "../hotel" &
 
 
 ###########################
